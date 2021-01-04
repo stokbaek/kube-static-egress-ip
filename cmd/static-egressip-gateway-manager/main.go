@@ -41,7 +41,7 @@ func main() {
 	flag.Parse()
 	defer glog.Flush()
 
-	glog.Infof("Running Nirmata egress ip gateway manager version: " + version.Version)
+	glog.Infof("Running Nirmata-forked egress ip gateway manager version: " + version.Version)
 
 	// set up signals so we handle the first shutdown signal gracefully
 	stopCh := signals.SetupSignalHandler()
